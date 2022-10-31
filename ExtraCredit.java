@@ -9,16 +9,23 @@ public class ExtraCredit {
             System.out.println("round "+ elem + " out of 3");
             //start coding in the box
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+int rand1 = (int)(Math.random() * (10 - 1) + 1);
+int rand2 = (int)(Math.random() * (10 - 1) + 1);
+int rand3 = (int)(Math.random() * (10 - 1) + 1);
+System.out.print("The product of the 3 numbers:" + (rand1 * rand2 * rand3));
+System.out.print("The product of the 3 numbers:" + (rand1 + rand2 + rand3));
+System.out.print("Please guess what the 3 integers may be, all seperated by a space: ");
+int n1 = in.nextInt();
+int n2 = in.nextInt();
+int n3 = in.nextInt();
 
-
-            
             
             
             
             
             
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-            if(ExtraCredit.check()){ // fill the check() with the correct varibles
+            if(ExtraCredit.check(rand1, rand2, rand3, n1, n2, n3)){ // fill the check() with the correct varibles
             // DO NOT TOUCH ANYTHING BELOW THIS
                 tc++; 
             }
